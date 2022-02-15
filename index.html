@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAKDN78x0UQ4IybMn918LxOpcgDtTF2XhCGA&usqp=CAU">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" -->
+    <script src="https://kit.fontawesome.com/e71a24b13b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="info-div">
+            <div class="info-div-text">
+                Click on Any Block to edit.
+
+            </div>
+        </div>
+        <div class="resume-div">
+            <div class="resume-container">
+                <div class="resume-block name-block">
+                    <div class="name">James Bond</div>
+                    <div class="address">28 - Oliver Street, London , UK</div>
+                    <div class="email">james123bond@gmail.com</div>
+                </div>
+                <div class="resume-block summary">
+                    <div class="professional-summary-text">
+                        PROFESSIONAL SUMMARY
+                    </div>
+                    <div class="border-box"></div>
+                    <div class="summary-text">
+                        The professional summary for a resume is a brief statement highlighting your work experience,
+                        achievements and skills.
+                        It should be placed in the top section of your resume.
+                        The purpose of a professional resume summary is to entice the hiring manager to read the rest of
+                        the resume.
+                    </div>
+                </div>
+                <div class="resume-block projects">
+                    <div class="projects-text">
+                        PROJECTS
+                    </div>
+                    <div class="border-box"></div>
+                    <div class="project-1">
+                        <div class="project-title title-1">Project Title-1</div>
+                        <ul>
+                            <li id="des-1">Description of Project-1</li>
+                            <li id="des-2">Description of Project-1</li>
+                            <li id="des-3">Description of Project-1</li>
+                        </ul>
+                    </div>
+                    <div class="project-1">
+                        <div class="project-title title-2">Project Title-1</div>
+                        <ul>
+                            <li id="des-4">Description of Project-1</li>
+                            <li id="des-5"> Description of Project-1</li>
+                            <li id="des-6">Description of Project-1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-block experience">
+                    <div class="experience-text">EXPERIENCE</div>
+                    <div class="border-box"></div>
+                    <div class="exp-1">
+                        <div class="company-name-1">Company</div>
+                        <div class="designation-1">Designation</div>
+                        <div class="time-period-1">Apr 2017 - Mar 2019</div>
+                    </div>
+                    <div class="exp-2">
+                        <div class="company-name-2">Company</div>
+                        <div class="designation-2">Designation</div>
+                        <div class="time-period-2">Apr 2017 - Mar 2019</div>
+                    </div>
+                </div>
+                <div class="resume-block education">
+                    <div class="education-text">EDUCATION</div>
+                    <div class="border-box"></div>
+                    <div class="exp-1">
+                        <div class="company-name d-1">Degree Name</div>
+                        <div class="designation i-1">Insitute Name</div>
+                        <div class="time-period p-1">Apr 2017 - Mar 2019</div>
+                    </div>
+                    <div class="exp-1">
+                        <div class="company-name d-2">Degree Name</div>
+                        <div class="designation i-2">Insitute Name</div>
+                        <div class="time-period p-2">Apr 2017 - Mar 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="download-button">Download</div>
+</body>
+<script src="script.js"></script>
+
+</html>

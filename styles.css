@@ -1,0 +1,269 @@
+body{
+  /* overflow: hidden; */
+  margin: 0;
+  background-color: lightgray;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.main-container{
+  position: absolute;
+  height: 100vh;    
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin-top: 30px; */
+}
+
+.info-div{
+  height : 80vh;
+  width: 40vw;
+  background-color: #fff;
+  border: 2px dashed black;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-div{
+  margin: 100px;
+  height : 100%;
+  width: 45vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.info-div-text{
+  color: lightgray;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.resume-container{
+  height: 95vh;
+  width: 35vw;
+}
+
+.name-block{
+  /* height: 20%; */
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.name{
+  color: blueviolet;
+  font-size: 3rem;
+}
+
+.address{
+  font-size: 1rem;
+  color: black;
+}
+
+.email{
+  font-size: 1.2rem;
+  color: black;
+  /* font-weight: 600; */
+}
+
+.summary ,.projects ,.experience ,.education ,.links{
+  margin-top: 7px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.border-box{
+  border-top: 1px dashed black;
+}
+
+.professional-summary-text ,.projects-text ,.experience-text , .education-text ,.links-text{
+  font-weight: 600;
+}
+
+.summary-text{
+    margin-top: 2px;
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.resume-div::-webkit-scrollbar {
+  display: none;
+}
+
+.project-title{
+  font-size: 17px;
+  font-weight: bold;
+}
+ul{
+  margin: 0;
+}
+
+.project-1{
+ margin-top: 5px;
+}
+
+.company-name{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.designation{
+  color:blueviolet;
+  font-size: 15px;
+}
+
+.time-period{
+  font-size: 16px;
+}
+
+.exp-1{
+  margin-top: 5px;
+}
+
+li{
+  color: darkviolet
+}
+
+.links-container{
+  padding: 5px;
+}
+
+.link-1{
+  display: flex;
+  flex-direction: row;
+}
+
+.link1-text{
+  margin-left: 5px;
+  /* text-decoration: none; */
+}
+
+.link-1{
+  color: black;
+  /* text-decoration: none; */
+}
+
+a{
+  text-decoration: none;
+}
+
+.resume-block.selected{
+  border: 2px solid darkslategray;
+}
+
+.box-container{
+  padding: 10px;
+  border: 2px solid gray;
+  height: 250px;
+  width: 400px;
+  font-size: 18px;
+  color: black;
+  font-family: monospace;
+  box-shadow: 0 0 8px 5px lightgrey;
+}
+
+.input{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  padding: 5px;
+  height: 20%;
+  width: 80%;
+  border: 1px solid brown;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.summary-1-input{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  padding: 5px;
+  height: 70%;
+  width: 90%;
+  border: 1px solid brown;
+  border-radius: 10px;
+  display: flex;
+  /* align-items: center; */
+  overflow: hidden;
+}
+
+.bigbox-container{
+  padding: 10px;
+  border: 2px solid gray;
+  height: 400px;
+  width: 400px;
+  font-size: 18px;
+  color: black;
+  font-family: monospace;
+  box-shadow: 0 0 8px 5px lightgrey;
+}
+
+.project-des{
+  border: 1px solid tomato;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+
+.bigbox-input{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  padding: 5px;
+  height: 8%;
+  width: 90%;
+  border: 1px solid brown;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-details ,.company-details , .education-details{
+  margin: 15px;
+}
+
+.download-button{
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: tomato;
+  position: relative;
+  top:93vh;
+  left:225px;
+  cursor: pointer;
+}
+
+.company-name-1 , .company-name-2{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .info-div,
+  .resume-div {
+      width: 100%;
+      height: 100%;
+  }
+  .main-container{
+    overflow: scroll;
+    display: block;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
+  div {
+    display: none;
+  }
+} */
